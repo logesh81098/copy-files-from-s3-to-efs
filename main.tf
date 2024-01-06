@@ -16,3 +16,7 @@ module "efs" {
   subnet-2-id = module.vpc.subnet-2-id
   efs-security-group = module.security-groups.efs-security-group
 }
+
+module "iam-role" {
+  source = "./module/iam"
+}
